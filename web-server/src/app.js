@@ -24,21 +24,21 @@ app.use(express.static(publicPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Matt'
+        name: 'Shellback Software'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Matt'
+        name: 'Shellback Software'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        name: 'Matt',
+        name: 'Shellback Software',
         message: 'Help information'
     })
 })
@@ -76,7 +76,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: 'Error 404',
         errorText: 'Help article not found.',
-        name: 'Matt',
+        name: 'Shellback Software',
     })
 })
 
@@ -84,7 +84,7 @@ app.get('*', (req,res) => {
     res.render('404', {
         title: 'Error 404',
         errorText: 'Page not found',
-        name: 'Matt',
+        name: 'Shellback Software',
     })})
 
 app.listen(port, () => {

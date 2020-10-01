@@ -1,5 +1,6 @@
-node_modules/
+node_modules
 notes.json
-playground/
-weather-app/utils/config.js
+playground
+config.js
+task-manager/config
 *.png
